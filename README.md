@@ -3,5 +3,13 @@ The Python script goes through a given folder and its subfolders, extracts data 
 The script assumes that the database username and password are both "postgres".
 
 To run the script on Windows:
-- `pip install -r requirements.txt`
+- `virtualenv venv`
+- `venv\scripts\activate`
+- `pip install psycopg2`
 - `python main.py`
+
+To run the script on Linux:
+- `virtualenv venv`
+- `source venv/bin/activate`
+- `pip install psycopg2-binary`
+- `python3 main.py`
